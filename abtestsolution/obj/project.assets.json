@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP PC\\source\\repos\\abtestsolution\\abtestsolution\\abtestsolution.csproj",
+      "projectUniqueName": "C:\\Users\\HP PC\\source\\repos\\abtest\\abtestsolution\\abtestsolution.csproj",
       "projectName": "abtestsolution",
-      "projectPath": "C:\\Users\\HP PC\\source\\repos\\abtestsolution\\abtestsolution\\abtestsolution.csproj",
+      "projectPath": "C:\\Users\\HP PC\\source\\repos\\abtest\\abtestsolution\\abtestsolution.csproj",
       "packagesPath": "C:\\Users\\HP PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP PC\\source\\repos\\abtestsolution\\abtestsolution\\obj\\",
+      "outputPath": "C:\\Users\\HP PC\\source\\repos\\abtest\\abtestsolution\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
