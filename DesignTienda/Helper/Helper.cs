@@ -12,7 +12,7 @@ namespace DesignTienda.Helper
         public HttpClient Initial()
         {
             var client = new HttpClient();
-            client.BaseAddress = new Uri("https://localhost:44334/");
+            client.BaseAddress = new Uri("https://localhost:44375/");
             return client;
         }
     }
@@ -22,7 +22,7 @@ namespace DesignTienda.Helper
         public HttpClient Initial()
         {
             var client = new HttpClient();
-            client.BaseAddress = new Uri("https://localhost:44334/");
+            client.BaseAddress = new Uri("https://localhost:44375/");
             return client;
         }
 

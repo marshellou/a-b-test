@@ -9,12 +9,13 @@ using DesignTienda.Models;
 using DesignTienda.Helper;
 using System.Net.Http;
 using Newtonsoft.Json;
-using AspNetCore.Http.Extensions;
 using System.Data;
 using System.ComponentModel;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DesignTienda.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -39,15 +40,6 @@ namespace DesignTienda.Controllers
             return View(categorias);
         }
 
-        //public async Task<IActionResult> Edit(int? id) 
-        //{
-        //    if (id == null)
-        //        return NotFound();
-
-        //    var categorias = await contex
-        //}
-
-
         public async Task<IActionResult> ChartCategoria()
         {
             List<v_ventas_categorias> categorias = new List<v_ventas_categorias>();
@@ -59,7 +51,7 @@ namespace DesignTienda.Controllers
                 categorias = JsonConvert.DeserializeObject<List<v_ventas_categorias>>(results);
             }
             return View(categorias);
-            
+
         }
 
         public async Task<IActionResult> Details(int Id)
@@ -98,7 +90,7 @@ namespace DesignTienda.Controllers
             return View();
         }
 
-        public async Task<ActionResult> Delete(int Id) 
+        public async Task<ActionResult> Delete(int Id)
         {
             var categorias = new inv_categoria_prod();
             HttpClient client = _api.Initial();
@@ -106,7 +98,7 @@ namespace DesignTienda.Controllers
             return RedirectToAction("Index");
         }
 
-        
+
         public IActionResult Privacy()
         {
             return View();
